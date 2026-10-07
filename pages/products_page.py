@@ -31,3 +31,10 @@ class ProductsPage(BasePage):
         self.click(
             self.CART_LINK
         )
+        SORT_DROPDOWN = ".product_sort_container"
+        def sort_products(self, option):
+
+          self.page.select_option(
+        self.SORT_DROPDOWN,
+        option
+    )
