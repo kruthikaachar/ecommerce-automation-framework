@@ -51,3 +51,4 @@ class CheckoutPage(BasePage):
         return self.get_text(
             self.ORDER_COMPLETE_MESSAGE
         )
+    CHECKOUT_ERROR = "[data-test='error']"
