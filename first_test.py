@@ -1,4 +1,5 @@
 from playwright.sync_api import sync_playwright
+print("Starting the test...")
 
 with sync_playwright() as p:
 
