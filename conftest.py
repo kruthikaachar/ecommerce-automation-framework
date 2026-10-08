@@ -37,5 +37,10 @@ from api.auth_api import AuthAPI
 
 
 @pytest.fixture
-def auth_api():
-    return AuthAPI("https://dummyjson.com")
+def product_api():
+    return ProductAPI("https://dummyjson.com")
+
+
+@pytest.fixture
+def cart_api():
+    return CartAPI("https://dummyjson.com")
