@@ -36,11 +36,9 @@ import pytest
 from api.auth_api import AuthAPI
 
 
-@pytest.fixture
-def product_api():
-    return ProductAPI("https://dummyjson.com")
-
+import pytest
+from api.auth_api import AuthAPI   # use your actual module/class name
 
 @pytest.fixture
-def cart_api():
-    return CartAPI("https://dummyjson.com")
+def auth_api():
+    return AuthAPI("https://dummyjson.com")
