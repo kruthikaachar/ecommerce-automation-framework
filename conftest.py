@@ -31,3 +31,11 @@ def logged_in_page(page):
     page.click("#login-button")
 
     return page
+import pytest
+
+from api.auth_api import AuthAPI
+
+
+@pytest.fixture
+def auth_api():
+    return AuthAPI("https://dummyjson.com")
