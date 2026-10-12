@@ -21,7 +21,7 @@ def page():
 
 @pytest.fixture(scope="function")
 def logged_in_page(page):
-
+    
     page.goto("https://www.saucedemo.com/")
 
     page.fill("#user-name", "standard_user")
