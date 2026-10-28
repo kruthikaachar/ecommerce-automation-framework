@@ -37,4 +37,4 @@ class ProductsPage(BasePage):
           self.page.select_option(
         self.SORT_DROPDOWN,
         option
-    )
+          )

@@ -18,3 +18,11 @@ class ProductAPI(BaseAPIClient):
 
     def get_product(self, product_id):
         return self.get(f"/products/{product_id}")
+
+
+
+
+
+
+
+    
